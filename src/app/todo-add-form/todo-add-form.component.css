@@ -1,0 +1,29 @@
+h2{
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+h2>i{
+  cursor: pointer;
+  color: seagreen;
+}
+.field{
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.field>input{
+  flex-grow: 1;
+}
+.field>label{
+  width: 10%;
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+.error-msg{
+  color: crimson;
+  margin-bottom: 15px;
+}

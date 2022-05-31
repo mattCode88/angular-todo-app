@@ -1,0 +1,9 @@
+<article class="todo-item">
+  <div>
+    <p><span *ngIf="todo?.completed"><i class="fa-solid fa-check check"></i></span> {{todo?.testo}} ({{todo?.priority}})</p>
+    <p>Creato il: {{todo?.data}}</p>
+    <button *ngIf="!todo?.completed" class="btn" (click)="completeTask()" title="Completa Task">DONE</button>
+  </div>
+  <div><i class="fa-solid fa-xmark delete" title="Elimina Task" (click)="deleteTask()"></i></div>
+</article>
+

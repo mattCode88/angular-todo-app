@@ -1,0 +1,15 @@
+<section>
+  <h2>Aggiungi Task <i (click)="addTask(desc, prio)" class="fa-solid fa-plus" title="Aggiungi task"></i></h2>
+  <form>
+    <div class="field">
+      <label for="">Descrizione</label>
+      <input type="text" #desc>
+    </div>
+    <p *ngIf="isError.testoError" class="error-msg">{{ isError.testoErrorMsg}}</p>
+    <div class="field">
+      <label for="">Priorità</label>
+      <input type="number" min="1" max="5" #prio>
+    </div>
+    <p *ngIf="isError.priorityError" class="error-msg">{{ isError.priorityErrorMsg}}</p>
+  </form>
+</section>

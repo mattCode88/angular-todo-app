@@ -1,0 +1,8 @@
+<section>
+  <h2>Elenco Task <i class="fa-solid fa-trash" title="Elimina tutte le task" (click)="deleteAllTask()"></i></h2>
+  <div class="task-container">
+    <app-todo-item *ngFor="let todo of todos" [todo]="todo" class="task" (takeIdToDo)="deleteTask($event)"></app-todo-item>
+  </div>
+</section>
+
+

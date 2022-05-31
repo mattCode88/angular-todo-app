@@ -1,0 +1,3 @@
+<!-- ora qui arriverà l' evento newTodo che catturiamo con l' handler definito in app-todo-page -->
+<app-todo-add-form (newTask)="addTodo($event)"></app-todo-add-form>
+<app-todo-list [todos]="sortTodos()" (deleteToDo)="deleteTodo($event)"></app-todo-list>
